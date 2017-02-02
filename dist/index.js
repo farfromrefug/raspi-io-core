@@ -675,6 +675,7 @@ var RaspiIOCore = exports.RaspiIOCore = function (_EventEmitter) {
       }
 
       this[i2cCheckAlive]();
+      this[i2c].configure(options);
 
       this[i2cDelay] = Math.round((delay || 0) / 1000);
 
